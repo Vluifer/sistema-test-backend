@@ -23,7 +23,7 @@ public class Usuario {
     private Boolean enabled = true;
     private String perfi;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "usuario")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "usuario")
     private Set<UsuarioRol> UsuarioRoles = new HashSet<>();
 
 
