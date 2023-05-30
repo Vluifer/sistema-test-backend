@@ -87,6 +87,14 @@ public class Usuario {
         this.telefono = telefono;
     }
 
+    public String getPerfi() {
+        return perfi;
+    }
+
+    public void setPerfi(String perfi) {
+        this.perfi = perfi;
+    }
+
     public Boolean getEnabled() {
         return enabled;
     }
