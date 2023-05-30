@@ -23,7 +23,7 @@ public class Usuario {
     private Boolean enabled = true;
     private String perfi;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "usuario")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "usuario")
     private Set<UsuarioRol> UsuarioRoles = new HashSet<>();
 
 
@@ -85,6 +85,14 @@ public class Usuario {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getPerfi() {
+        return perfi;
+    }
+
+    public void setPerfi(String perfi) {
+        this.perfi = perfi;
     }
 
     public Boolean getEnabled() {
