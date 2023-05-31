@@ -23,7 +23,7 @@ public class SistemaTestBackendApplication  implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Usuario usuario =new Usuario();
+		/*Usuario usuario =new Usuario();
 
 		usuario.setNombre("Luifer");
 		usuario.setApellido("Villa");
@@ -44,6 +44,6 @@ public class SistemaTestBackendApplication  implements CommandLineRunner {
 		usuarioRoles.add(usuarioRol);
 
 		Usuario usuarioGuardado = usuarioService.guardarUsuario(usuario,usuarioRoles);
-		System.out.println(usuarioGuardado.getNombre());
+		System.out.println(usuarioGuardado.getNombre());*/
 	}
 }
